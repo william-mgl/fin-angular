@@ -1,0 +1,159 @@
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 20px auto;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #34495e;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  button.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #16a085;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.submit-btn:hover {
+    background-color: #1abc9c;
+  }
+/* Estilo general para la tabla */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Estilo general para la tabla */
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Estilo de la cabecera de la tabla */
+thead {
+  background-color: #016e62;  /* Color verde oscuro */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 10px 10px 0 0;  /* Bordes redondeados en la parte superior */
+}
+
+/* Estilo para los encabezados de las columnas */
+th {
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* Estilo de las filas de la tabla */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Filas alternas con un color de fondo diferente para mejorar la legibilidad */
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Estilo de las celdas */
+td {
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Efecto hover para las filas */
+tr:hover {
+  background-color: #e0f2f1;
+}
+
+/* Botones de acción (Actualizar, Eliminar) */
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo de los botones de "Actualizar" */
+button.update {
+  background-color: #00796b;
+  color: white;
+}
+
+button.update:hover {
+  background-color: #004d40;
+  transform: scale(1.05);  /* Efecto de agrandamiento */
+}
+
+/* Estilo de los botones de "Eliminar" */
+button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);  /* Efecto de agrandamiento */
+}
+
+/* Estilo de los botones cuando están deshabilitados */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilo de la tabla cuando no hay datos */
+table.empty {
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  padding: 20px;
+}

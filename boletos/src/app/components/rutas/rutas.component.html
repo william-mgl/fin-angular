@@ -1,0 +1,59 @@
+<div class="form-container">
+    <h3>Formulario de Ruta</h3>
+<form [formGroup]="rutasForm" (ngSubmit)="guardar_rutas()">
+  
+      <div class="form-group">
+        <label for="origen">Origen:</label>
+        <input id="origen" formControlName="origen" placeholder="Origen" />
+      </div>
+  
+      <div class="form-group">
+        <label for="destino">Destino:</label>
+        <input id="destino" formControlName="destino" placeholder="Destino" />
+      </div>
+  
+      <div class="form-group">
+        <label for="duracion">Duración:</label>
+        <input id="duracion" formControlName="duracion" placeholder="Duración (en horas)" />
+      </div>
+  
+      <div class="form-group">
+        <label for="precio">Precio:</label>
+        <input id="precio" formControlName="precio" placeholder="Precio" type="number" />
+      </div>
+  
+      <button type="submit" [disabled]="!rutasForm.valid"> {{ graba === 'S' ? 'Guardar Ruta' : 'Actualizar Ruta' }}
+      </button>
+    </form>
+  </div>
+  
+  <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Duracion</th>
+        <th>Precio</th>
+        <th>Actualizar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of objeto_tabla">
+
+        <td>{{item.origen}}</td>
+        <td>{{item.destino}}</td>
+        <td>{{item.duracion}}</td>
+        <td>{{item.precio}}</td>
+        <td>
+         <button (click)="cargardatos(item)">Actualizar</button>
+        </td>
+        <td>
+      <button (click)="eliminar_rutas(item)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
